@@ -39,8 +39,11 @@ I implemented a safe manual split to avoid data leakage:
 - Binary classification with sigmoid activation.
 
 ## Deployment with Django
-### Prediction Result
+### Prediction Results
 <p align="center">
-  <img src="https://github.com/Alaawael3/video_classification/blob/7488a008e578bf7d1eab27765c7469b168419f5f/shop_lifter_prediction.jpg?raw=true" alt="Prediction Result" width="600"/>
+  <img src="https://github.com/Alaawael3/video_classification/blob/7488a008e578bf7d1eab27765c7469b168419f5f/shop_lifter_prediction.jpg?raw=true" alt="Prediction Result" width="700"/>
 </p>
 
+<p align="center">
+  <img src="https://github.com/Alaawael3/video_classification/blob/1995e4cca7e011b69f47915fbcbf472efc71ffd5/non_shop_lifting.jpg?raw=true" alt="Prediction Result" width="700"/>
+</p>
