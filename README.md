@@ -41,5 +41,5 @@ I implemented a safe manual split to avoid data leakage:
 ## Deployment with Django
 ### Prediction Result
 <p align="center">
-  <img src="assets/prediction_result.png" alt="Prediction Result" width="600"/>
+  <img src="[assets/prediction_result.png](https://github.com/Alaawael3/video_classification/blob/7488a008e578bf7d1eab27765c7469b168419f5f/shop_lifter_prediction.jpg)" alt="Prediction Result" width="600"/>
 </p>
