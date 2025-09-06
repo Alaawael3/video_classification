@@ -15,29 +15,18 @@ Modular code with custom residual layers for experimentation.
 Deployed as a Django web app for real-world usage.
 
 ## Dataset Preparation
-Videos are first organized by class (e.g., theft/ and no_theft/).
-We implemented a safe manual split to avoid data leakage:
+Videos are first organized by class (theft/ and no_theft/).
+I implemented a safe manual split to avoid data leakage:
 
-def prepare_split(source_dir, split_dir, splits=(0.7, 0.2, 0.1)):
-    # Creates train/val/test splits by copying videos into new dirs
+### Techniques to Prevent Data Leakage
 
+- Strict split by video file: same video never appears in multiple subsets.
 
-Ensures same video never appears in multiple splits.
+- Shuffling applied only to training to preserve evaluation integrity.
 
-Uses stratified shuffling within each class.
+- Frame padding ensures temporal consistency without introducing bias.
 
-Results in:
-
-dataset_split/
-├── train/
-│   ├── theft/
-│   └── no_theft/
-├── val/
-│   ├── theft/
-│   └── no_theft/
-└── test/
-    ├── theft/
-    └── no_theft/
+- Resizing with padding avoids distorting motion patterns.
 
 ## Model Architecture
 TimeDistributed CNN layers handle each frame individually.
